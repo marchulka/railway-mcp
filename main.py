@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from routes import chat
 
-app = FastAPI()  # 👈 ОБЯЗАТЕЛЬНО НА ВЕРХУ
-
+app = FastAPI()
 app.include_router(chat.router)
 
 if __name__ == "__main__":
