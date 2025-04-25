@@ -17,6 +17,7 @@ COPY . .
 RUN npm run build
 
 # Expose necessary port(s) if required (MCP typically communicate over stdio, so not needed)
+EXPOSE 8000
 
 # Start the MCP server
 CMD ["node", "build/index.js"]
